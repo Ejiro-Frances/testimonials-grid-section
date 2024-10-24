@@ -1,0 +1,132 @@
+$violet_color: hsl(263, 55%, 52%)
+$grayish-blue: hsl(217, 19%, 35%)
+$very-dark-blackish-blue: hsl(219, 29%, 14%)
+$white: hsl(0, 0%, 100%)
+$light-gray: hsl(0, 0%, 81%)
+$light-grayish-blue: hsl(210, 46%, 95%)
+$black-color : hsl(0, 0%, 0%)
+
+// For different screen sizes
+$big-screen:720px
+$bigger-screen:920px
+
+* 
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+html
+  font-size: 13px
+
+body
+  font-family: "Barlow Semi Condensed", sans-serif
+  background: $light-grayish-blue
+  min-height: 100vh
+
+
+.container
+  display: grid
+  gap: 1em
+  margin: 7% auto
+  padding: 2rem
+  justify-items: center
+  align-items: center
+  max-width: 80rem
+ 
+
+  @media screen and (min-width: $bigger-screen)
+  
+    grid-template-columns:  repeat(4, 1fr)
+    grid-template-rows: repeat (2, 1fr)
+    
+    
+
+.card
+  max-width: 25em
+  padding: 2em
+  margin: 1em 1em
+  color: $white
+  border-radius: 1rem
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2)
+
+
+  h2
+    padding: 1em 0
+
+.daniel
+  background: $violet_color
+  
+
+.joe
+  background: $grayish-blue
+
+.white-back
+  background: $white
+  color:$black-color
+
+.pat
+  background: $black-color
+  color: $white
+
+.profile
+  display: flex
+  gap: 10px
+
+  p
+   opacity: 0.5
+
+img // for all the images
+  max-width: 2.9rem
+  border-radius:50%
+
+.attribution
+  font-size: 11px
+  text-align: center
+
+  a 
+    color: hsl(228, 45%, 44%)
+
+
+@media (min-width: $big-screen) and (max-width:$bigger-screen)
+  .daniel
+    grid-row: 1/2
+    grid-column: 1/2
+
+  .pat
+    min-height: 30rem
+    grid-row: 1/2
+    grid-column: 2/3
+
+  .jeanette
+    grid-row: 2/3
+    grid-column: 1/2
+  
+  .joe
+    grid-row: 2/3
+    grid-column: 2/3
+
+  .kira
+    grid-column: 1/span 2
+    grid-row: 3/4
+    max-width: 30rem
+
+
+@media screen and (min-width: $bigger-screen)
+  .card
+    max-width: 40rem
+    min-height: 20rem
+    margin: 0
+    
+  .daniel
+    grid-row: 1/2
+    grid-column: 1/span 2
+
+  .pat
+    grid-row: 2/3
+    grid-column: 2/span 2
+
+  .kira
+    grid-column: 4/5
+    grid-row: 1/3
+    max-width: 18rem
+
