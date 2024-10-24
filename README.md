@@ -1,24 +1,19 @@
-### Testimonials grid section
+### Testimonials Grid Section
 
 This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7)
 
 ### Features
 
-The webpage consist of testimonials from different people.
+This project showcases an elegant, responsive testimonial card section created with SASS and HTML. It features a sleek, modern design with five customizable testimonial cards that are perfect for personal or business websites.
 
-### Technologies used
+### Live Demo
 
-- HTML for the content of the page
-
-- CSS to style the page
-
-- sass prepocessor
-
-### Links
-
-The Live site can be viewed [here]()
+[Check out the Live demo here](https://testimonials-grid-section-dusky-tau.vercel.app/)
 
 ### Contact
 
-- X - @france_ssa(https://x.com/france_ssa)
+Got any questions or feedback? Please reach out:
+
 - Email - francesejiro@yahoo.com
+- Github - @Ejiro-Frances
+- X - @france_ssa(https://x.com/france_ssa)
